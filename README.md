@@ -2,7 +2,7 @@
 
 This repository holds **public installers** for **IAP - ILG**, an internal fork of [IAP Desktop](https://github.com/GoogleCloudPlatform/iap-desktop). Source code lives elsewhere; this repo is for **installers**, **release notes**, and **in-app update checks**.
 
-Releases are published from a **local maintainer** workflow (not stored in this repository): copy the x64 MSI into `installer-files/` next to your clone, then run `scripts\Publish-Release.ps1` with GitHub CLI authenticated for this repo.
+Releases are published from a **local maintainer** workflow (not stored in this repository): copy the x64 MSI into `installer-files/` next to your clone, then run `scripts\Publish-Release.ps1` with GitHub CLI authenticated for this repo. If `gh release create` fails asking for **workflow** scope, run `gh auth refresh -h github.com -s workflow` once, then retry.
 
 ## Installing
 
